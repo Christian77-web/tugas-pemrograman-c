@@ -1,23 +1,23 @@
 #include <stdio.h>
 
-int main() 
-{
-    float panjang;
-    float lebar;
-    float luas;
-    float keliling;
 
-    printf("Masukkan panjang persegi panjang: ");
-    scanf("%f", &panjang);
+int main() {
 
-    printf("Masukkan lebar persegi panjang: ");
-    scanf("%f", &lebar);
+    double panjang_persegi;
+    double lebar_persegi; 
+    double luas;
+    double keliling;
 
-    luas = panjang * lebar;
-    keliling = 2 * (panjang + lebar);
+    printf("Diketahui Panjang Perseginya: ");
+    scanf("%lf", &panjang_persegi);
 
-    printf("Luas persegi panjang: %.2f\n", luas);
-    printf("Keliling persegi panjang: %.2f\n", keliling);
+    printf("Enter Lebar Persegi: ");
+    scanf("%lf", &lebar_persegi);
 
+    luas = panjang_persegi * lebar_persegi;
+    keliling = 2 * (panjang_persegi + lebar_persegi);
+
+    printf("Luas: %.0f cm dan Keliling: %.0f cm\n", luas, keliling);
+    
     return 0;
 }
